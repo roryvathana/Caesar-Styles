@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher</title>
+  <!-- Local Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Caesar Cipher</h1>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="encrypt-tab" data-bs-toggle="tab" data-bs-target="#encrypt" type="button" role="tab" aria-controls="encrypt" aria-selected="true">Encrypt</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="decrypt-tab" data-bs-toggle="tab" data-bs-target="#decrypt" type="button" role="tab" aria-controls="decrypt" aria-selected="false">Decrypt</button>
+      </li>
+    </ul>
+    <div class="tab-content mt-4" id="myTabContent">
+      <div class="tab-pane fade show active" id="encrypt" role="tabpanel" aria-labelledby="encrypt-tab">
+        <div class="mb-3">
+          <label for="plain-text" class="form-label">Plain Text:</label>
+          <input type="text" class="form-control" id="plain-text" placeholder="Enter plain text">
+        </div>
+        <div class="mb-3">
+          <label for="shift" class="form-label">Shift:</label>
+          <input type="number" class="form-control" id="shift" placeholder="Enter shift value">
+        </div>
+        <div class="mb-3">
+          <label for="cipher-text" class="form-label">Cipher Text:</label>
+          <input type="text" class="form-control" id="cipher-text" readonly>
+        </div>
+        <button class="btn btn-primary w-100" onclick="encryptText()">Encrypt</button>
+      </div>
+      <div class="tab-pane fade" id="decrypt" role="tabpanel" aria-labelledby="decrypt-tab">
+        <div class="mb-3">
+          <label for="cipher-text-decrypt" class="form-label">Cipher Text:</label>
+          <input type="text" class="form-control" id="cipher-text-decrypt" placeholder="Enter cipher text">
+        </div>
+        <div class="mb-3">
+          <label for="shift-decrypt" class="form-label">Shift:</label>
+          <input type="number" class="form-control" id="shift-decrypt" placeholder="Enter shift value">
+        </div>
+        <div class="mb-3">
+          <label for="plain-text-decrypt" class="form-label">Plain Text:</label>
+          <input type="text" class="form-control" id="plain-text-decrypt" readonly>
+        </div>
+        <button class="btn btn-success w-100" onclick="decryptText()">Decrypt</button>
+      </div>
+    </div>
+  </div>
+  <!-- Local Bootstrap JS -->
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

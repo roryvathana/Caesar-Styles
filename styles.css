@@ -1,0 +1,87 @@
+/* Styles for Caesar Cipher with LGBT+ Theme */
+
+body {
+    background: linear-gradient(135deg, #ff006e, #f72585, #7209b7, #4361ee, #4cc9f0);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 500px;
+  }
+  
+  .nav-tabs .nav-link {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background: #ff006e;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    transform: scale(1.1);
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  input {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  button {
+    background: linear-gradient(135deg, #ff006e, #f72585);
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #4cc9f0, #4361ee);
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
